@@ -2,4 +2,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    pass
+    context = {
+        'title': 'главная'
+    }
+    return render(request, 'mainapp/index.html', context)
